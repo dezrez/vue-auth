@@ -1,6 +1,6 @@
-# rezi-vue
+# Rezi Vue Starter
 
-> A Vue.js project
+> Rezi Vue Starter
 
 ## Build Setup
 
