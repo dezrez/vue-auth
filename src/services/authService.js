@@ -10,7 +10,7 @@ const getBaseAuthentication = (username, password) => {
     var token = username + ':' + password;
     var hash = btoa(token);
     return 'Basic ' + hash;
-}
+};
 
 const checkIsAuthenticated = () => {
     if (!sessionStorage.credentials) {
@@ -29,7 +29,7 @@ const BuildAuthUrl = () => {
         'scope=' + encodeURI(config.accessScope) + '&' +
         'state=' + encodeURI(state);
     return url;
-}
+};
 
 const parseLocation = function (location) {
     var pairs = location.substring(1).split('&');
@@ -67,6 +67,12 @@ const getToken = function (code, callback) {
                 }
             });
     }
-}
+};
 
-export {getBaseAuthentication, BuildAuthUrl, parseLocation, getToken, checkIsAuthenticated}
+export {
+getBaseAuthentication,
+BuildAuthUrl,
+parseLocation,
+getToken,
+checkIsAuthenticated
+}

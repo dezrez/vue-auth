@@ -26,7 +26,6 @@ router.map({
   }
 });
 
-// Authentication logic
 router.beforeEach(function (transition) {
   if (AuthService.checkIsAuthenticated() || transition.to.query.code) {
     transition.next();
