@@ -5,7 +5,7 @@ import Header from './containers/Header'
 import Index from './components/Index'
 import Home from './components/Home'
 import Router from 'vue-router'
-import * as AuthService from './services/authService';
+//import * as AuthService from './services/authService';
 
 Vue.use(Router);
 
@@ -27,7 +27,7 @@ router.map({
 });
 
 router.beforeEach(function (transition) {
-  if (AuthService.checkIsAuthenticated() || transition.to.query.code) {
+  /*if (AuthService.checkIsAuthenticated() || transition.to.query.code) {
     transition.next();
     if (transition.to.query.code) {
       AuthService.getToken(transition.to.query.code, (credentials) => {
@@ -36,7 +36,7 @@ router.beforeEach(function (transition) {
     }
   } else {
     window.location = AuthService.BuildAuthUrl();
-  }
+  }*/
 })
 
 router.redirect({
