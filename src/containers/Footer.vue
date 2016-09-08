@@ -1,5 +1,5 @@
-<template lang="jade">
-	footer Footer Container
+<template>
+	<p>Footer</p>
 </template>
 
 <script>
@@ -17,9 +17,5 @@
 </script>
 
 <style scoped lang="sass">
-   @import "~bourbon/app/assets/stylesheets/bourbon";
-   * 
-   	color: red;
-   	background-color: red;
-   	@include background(linear-gradient(red, green) left repeat);
+
 </style>
